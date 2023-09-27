@@ -1,0 +1,147 @@
+REACT:  used to create front end(front and technology)
+     :  React is used to design a reuseable components
+     : to run the react command prompt open in floder and command npm start
+     :compination of components.
+     .every tag should have closing tag in jsx
+     :use self closing tag for those who doesnot have content in jsx
+-----------------------------------------------------------------------------
+BASIC COMMANDS IN REACT.
+-----------------------------------------------------------------------
+
+1. TO CREATE  REACT APP: npx  create-react-app project-name
+2. to run react project:npm start.
+3.installing material ui: npm install @mui/material @emotion/react @emotion/styled
+4. INSTALLING AXIOS : npm i axios
+
+Concepts & features
+------------------------------------
+
+1. JS libary for buliding UI.
+
+2. Single Page Application.
+
+3. React is a Example for Declarative Application.
+                Declarative : -it does not have direct access  DOM
+
+4. IMMUTEABILITY : (NOT CHANGING VALUE) OR IT DOES NOT HAVE CHANGE VARIABLE ,STRING ETC.......
+
+5. PURE FUNCTION : IT DOESNOT CAUSE ANY SIDE EFFECTS OR ANY CHANGE
+                 : ACCEPT IMMUTEABILITY OBJECT AND RETURN NEW OBJECT.
+
+ IMPORTANT
+6. VIRTUAL DOM  :  
+
+7. UNIDIRECTIONAL DATA FLOW  :  data sharing (PARENT TO CHILD.)
+
+8. JSX(JAVASCRIPT XML) : LANGUAGE TO WRITE REACT.COMBINATION OF HTML AND JAVASCRIPT. CONST HEADING = <H1> HEADING1 </H1>
+          - EVERY TAG SHOULD CONTAIN INSISDE A PARENT TAG.
+          - EMPTY FRAGMENT : <> </>.
+          - CLASS FROM className.
+          - FOR BECOME htmlFor.
+          - USE { } TO PROVIDE JS EXPRESSION INSISDE JSX.
+          
+9. TRANSPILING (Converting JSX TO JS,HTML) - babe1
+----------------------------------------------------------------------------------------------------------------------------------
+10. HOW TO CREATE REACT APPLICATION: create-react-app command.
+----------------------------------------------------------------------------------------------------------------------------------
+11. BASED ON COMPONENT : IS SMALL PART OF UI,EVERY REACT APP CONSIST OF TREE OF COMPONENTS : PARENT/STARTING NODE : APP COMPONENT
+     - IT IS A JS/JSX FILE WITH FILENAME STARTS WITH CAPITAL LETTER
+
+12. DIFFERENT TYPES OF COMPONENTS
+    -FUNCTIONAL/stateless COMPONENT : COMPONENT CREATED USING FUNCTION.
+     -class /starefull component : class component used tp create class 
+-------------------------------------------------------------------------------------------------------------------         
+13.   using extensions: 1.// rcc-React class component
+                         2. // rfce- react functional component.
+
+14. PROPS : PROPS IS A PROPERTY OF COMPONENT CAN BE SHARED WITH CHILD COMPONENTS. 
+          :ITS AN OBJECT.
+          :DATA COMING IN KEY VALUE PAIR.
+          :PROPS CAN BE ACESS VIA ARGUMENT OF THE COMPONENT.
+          : USED PROPS TO SHARE DATA FROM PARENT TO CHILD
+          : TO ACESS SHARED DATA IN CHILD COMPONENT USING PROPS WHICH WILL BE ARGUMENT OF THE COMPONENT.
+          : props cannot be changed outside the component.
+-----------------------------------------------------------------------------------------------------------------
+15. COMPONENT STYLING USING CSS:
+          -INLINE STYLING 
+          -CSS STYLE SHEET
+          -CSS MODULES-file name with extension : .MODULE.CSS
+------------------------------------------------------------------------------------------------------------------------
+16.REACT EVENTS BINDING:
+          -without arguments: call function  with its name only while binding event
+          -with arguments: bind the event with arrow function and call the function with argument 
+           inside the arrow function
+           -with event as argument: USE EVENT OBJECT AS ARGUMENT OF ARROW FUNCTION.
+------------------------------------------------------------------------------------------------------------------------
+17.CONDITIONAL RENDERING :
+               -if statements: operator &&
+               -if-else statements: ternary operator ?:
+-----------------------------------------------------------------------------------------------------------------------
+IMPORTANT
+18. REACT STATE : ITS OBJECT FOR CLASS COMPONENT
+          - TORE COMPONENT PROPERTY
+          -WHEN STATE CHANGES COMPONENT RE-RENDER
+          -TO CHANGE STATE VALUE USE, setState().
+-----------------------------------------------------------------------------------------------------------------------
+
+19.REACT COMPONENT LIFECYCLE
+     -Mounting Phase :putting elements into DOM
+               :constructor():
+               -getDerivedStateFromProps()
+               -render()
+               -componentDidMount()
+     -Updating phase: 
+               -getDerivedStateFromProps()
+               -shouldComponentUpdate()
+               -render()
+               -getSnapShotBeforeUpdate()
+               -componentDidUpdate()
+     -Unmounting phase : component removed from DOM
+               -componentWillUnmount()
+----------------------------------------------------------------------------------------------------------------------
+
+20. React Hooks :to use react feature such as state and lifecycle in react functional component.
+          -RULES
+               1: import hooks from  react library and call them inside functional component.
+               2: Hooks can only be called at top level of component.
+               3:Hooks cannot be conditional
+          -Types of Hooks
+          1:Predefined Hook
+               : useState() : used to track state in functional component.
+          2:Custom Hook
+-------------------------------------------------------------------------------------------------------------------------------------
+
+     21:Difference between Functional and class based components
+
+       Functional component                                     class component
+       -----------------------------------------------------------------------------------------------------------
+       1. JS PURE FUNCTION ACCEPT PROPS                    1.  Class Requires to extend from react component
+        RETURN JSX(REACT ELEMENTS)                          render function return  JSX
+
+      2. NO NEED OF RENDER FUNCTION.                        2. MUST USE RENDER FUNCTION TO RETURN JSX
+
+      3. RUN FROM TOP TO BOTTOM,ONCE JSX RETURN             3. COMPONENT KEPT ALIVE DEPENDING ON DIFFERENT
+         THEN IT CANNOT BE ALIVE                                LIFE CYCLE PHASES.
+     
+      4.STATELESS COMPONENT                                 4. STATEFULL COMPONENT
+
+      5. componentDidMount method is not available          5. can use react life cycle methods inside the component.
+        in functional component.
+
+      6. Hooks used.                                         6. Hooks are not used.  
+
+      7. constructor not used.                               7. Use constructor to intilalize state
+--------------------------------------------------------------------------------------------------------------------------------
+
+22. Rendering List(Array of items) : map array method is used rendering a item.
+------------------------------------------------------------------------------------------------------------------------
+
+23. React Form :
+  -e.preventDefault():to cancel reload event  if it is canceable.
+
+  - components can be divide into 2 types
+          -controlled component: managed by React component
+          -uncontrolled component: managed by DOM
+
+ 24.API CALL IN REACT USING AXIOS library: 
+         -MAKE HTTP REQUEST AND RETURN PROMISE.                        
